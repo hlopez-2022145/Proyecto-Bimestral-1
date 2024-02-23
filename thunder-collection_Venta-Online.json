@@ -1,0 +1,374 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Venta-Online",
+    "dateExported": "2024-02-23T23:20:04.342Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "181e281c-c80a-46b6-aac8-17436b567593",
+            "name": "public",
+            "containerId": "",
+            "created": "2024-02-23T18:53:49.699Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "5e10d495-55cc-4aaf-8387-1fed105b1000",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-02-23T18:53:49.700Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "9d46ebf6-7156-4806-849c-cc6954d092e8",
+            "name": "Category",
+            "containerId": "",
+            "created": "2024-02-23T19:17:43.108Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "e8086d31-eba0-4b50-943b-fbdd1acb5ad4",
+            "name": "Product",
+            "containerId": "",
+            "created": "2024-02-23T20:46:37.141Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "d6600c06-24c5-42d7-8cef-be4a5cf5377e",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "5e10d495-55cc-4aaf-8387-1fed105b1000",
+            "name": "Register",
+            "url": "/registerUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-23T18:53:49.699Z",
+            "modified": "2024-02-23T22:22:03.239Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Bryan"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Jualian"
+                    },
+                    {
+                        "name": "email",
+                        "value": "bjulian@kinal.edu.gt"
+                    },
+                    {
+                        "name": "username",
+                        "value": "bjulian"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "84aa408a-3f18-42da-920f-107f36dac61e",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "5e10d495-55cc-4aaf-8387-1fed105b1000",
+            "name": "Login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-23T18:53:49.700Z",
+            "modified": "2024-02-23T22:48:14.362Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "bjulian@kinal.edu.gt"
+                    },
+                    {
+                        "name": "username",
+                        "value": "bjulian",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "64980479-2a5f-432c-97a7-5ae93b4ea028",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "5e10d495-55cc-4aaf-8387-1fed105b1000",
+            "name": "Token",
+            "url": "/test",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-23T18:53:49.701Z",
+            "modified": "2024-02-23T21:36:44.912Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ5MGZiMjFkYjQ1NjliYzNjNDQwNGIiLCJ1c2VybmFtZSI6InJsb3BleiIsIm5hbWUiOiJSb3NhcmlvIiwicm9sZSI6IkNMSUVOVF9ST0xFIiwiaWF0IjoxNzA4NzI0MTc0LCJleHAiOjE3MDg3MzEzNzR9.e79nFTYSuwOYl_GyCnEQUPyOqBNSBVcXQadvpfrnsMs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "rlopez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "267182bd-6b16-4700-8f47-e0a872c23f17",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "5e10d495-55cc-4aaf-8387-1fed105b1000",
+            "name": "Update",
+            "url": "/update/65d8f065eda012e08f0a5217",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-23T18:53:49.702Z",
+            "modified": "2024-02-23T21:58:08.623Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hernan Misael"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "López Pérez"
+                    },
+                    {
+                        "name": "email",
+                        "value": "hlopez-2022145@kinal.edu.gt"
+                    },
+                    {
+                        "name": "username",
+                        "value": "hlopez-2022145"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2dde318e-3d7f-4510-987c-c7e4dcc66d8a",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "5e10d495-55cc-4aaf-8387-1fed105b1000",
+            "name": "Delete",
+            "url": "/delete/65d90f631db4569bc3c44047",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-23T18:53:49.703Z",
+            "modified": "2024-02-23T21:37:31.818Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "303868e6-db95-49d6-bc18-292dab8eb263",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "9d46ebf6-7156-4806-849c-cc6954d092e8",
+            "name": "AddCategory",
+            "url": "/category/addCategory",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-23T19:17:55.021Z",
+            "modified": "2024-02-23T19:26:20.178Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "category",
+                        "value": "Lacteos"
+                    },
+                    {
+                        "name": "description",
+                        "value": "1 litro de leche"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "13f6e25b-f759-482e-8bc8-8fe8b7604c62",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "9d46ebf6-7156-4806-849c-cc6954d092e8",
+            "name": "UpdateCategory",
+            "url": "/category/update/65d8f02eeda012e08f0a5215",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-23T19:22:46.716Z",
+            "modified": "2024-02-23T19:25:29.132Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "category",
+                        "value": "Frutas"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Manzanas"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f27c7053-a88f-494b-8ccf-9ef20473346d",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "9d46ebf6-7156-4806-849c-cc6954d092e8",
+            "name": "DeleteCategory",
+            "url": "/category/delete/65d8f02eeda012e08f0a5215",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-02-23T19:27:17.876Z",
+            "modified": "2024-02-23T19:27:33.794Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8dcc7332-8da7-4e0b-bd31-c465985222a6",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "9d46ebf6-7156-4806-849c-cc6954d092e8",
+            "name": "ListCategory",
+            "url": "/category/listCategory",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-02-23T19:28:19.246Z",
+            "modified": "2024-02-23T19:28:41.585Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "54349119-356a-4d61-9c43-562a1a72b402",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "e8086d31-eba0-4b50-943b-fbdd1acb5ad4",
+            "name": "AddProduct",
+            "url": "/product/addProduct",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-02-23T20:46:48.187Z",
+            "modified": "2024-02-23T21:39:13.221Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Gaseosas"
+                    },
+                    {
+                        "name": "price",
+                        "value": "7"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Bebidas dañinas"
+                    },
+                    {
+                        "name": "stock",
+                        "value": "0"
+                    },
+                    {
+                        "name": "sold",
+                        "value": "8"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65d8f136eda012e08f0a521b"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "66f5ba4e-4123-4283-b58b-999b1c0a43e1",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "e8086d31-eba0-4b50-943b-fbdd1acb5ad4",
+            "name": "ListProducts",
+            "url": "/product/listProducts",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-02-23T21:25:32.918Z",
+            "modified": "2024-02-23T21:28:35.200Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d9640e14-a241-4f6b-a389-01c21f99c882",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "e8086d31-eba0-4b50-943b-fbdd1acb5ad4",
+            "name": "ProductSoldOut",
+            "url": "/product/productSoldOut",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-02-23T21:42:24.669Z",
+            "modified": "2024-02-23T21:43:13.799Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "476b17e0-4299-4dea-815e-be70c498f5c0",
+            "colId": "442495bf-05a8-4e68-a402-14e216238588",
+            "containerId": "e8086d31-eba0-4b50-943b-fbdd1acb5ad4",
+            "name": "ProductMasVendido",
+            "url": "/product/productMasVendido",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-02-23T21:45:32.936Z",
+            "modified": "2024-02-23T21:46:06.689Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
